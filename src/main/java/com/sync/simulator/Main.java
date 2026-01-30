@@ -13,8 +13,9 @@ public class Main {
             System.out.println("2. Readers-Writers");
             System.out.println("3. Sleeping Barber");
             System.out.println("4. Cigarette Smokers");
-            System.out.println("5. Run Performance Benchmarks");
-            System.out.println("6. Exit");
+            System.out.println("5. Producer-Consumer");
+            System.out.println("6. Run Performance Benchmarks");
+            System.out.println("7. Exit");
             System.out.print("Select a problem to simulate: ");
 
             int choice = -1;
@@ -25,7 +26,7 @@ public class Main {
                 continue;
             }
 
-            if (choice == 6) {
+            if (choice == 7) {
                 if (currentProblem != null) {
                     currentProblem.stop();
                 }
@@ -33,7 +34,7 @@ public class Main {
                 break;
             }
 
-            if (choice == 5) {
+            if (choice == 6) {
                 // Run benchmarks
                 if (currentProblem != null) {
                     currentProblem.stop();
@@ -69,6 +70,9 @@ public class Main {
                     break;
                 case 4:
                     problem = new CigaretteSmokers();
+                    break;
+                case 5:
+                    problem = new ProducerConsumer();
                     break;
                 default:
                     System.out.println("Invalid number. Try again.");

@@ -45,6 +45,11 @@ public class BenchmarkRunner {
         allMetrics.add(benchmarkProblem(new CigaretteSmokers(), "Cigarette Smokers", false));
         allMetrics.add(benchmarkProblem(new CigaretteSmokers(), "Cigarette Smokers", true));
 
+        // Benchmark Producer-Consumer
+        System.out.println("\n--- Benchmarking Producer-Consumer ---");
+        allMetrics.add(benchmarkProblem(new ProducerConsumer(), "Producer-Consumer", false));
+        allMetrics.add(benchmarkProblem(new ProducerConsumer(), "Producer-Consumer", true));
+
         // Print summary
         printBenchmarkSummary(allMetrics);
     }
