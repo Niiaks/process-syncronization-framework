@@ -1,0 +1,7 @@
+com\sync\simulator\SyncProblem.class
+com\sync\simulator\Logger.class
+com\sync\simulator\Main.class
+com\sync\simulator\SleepingBarber.class
+com\sync\simulator\CigaretteSmokers.class
+com\sync\simulator\ReadersWriters.class
+com\sync\simulator\DiningPhilosophers.class
